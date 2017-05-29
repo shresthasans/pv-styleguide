@@ -37,4 +37,4 @@ package.json
 **/*.log*
 .Trashes
 .jshintrc
-gulpfile
+gulpfile.js
