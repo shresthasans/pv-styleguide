@@ -3,20 +3,19 @@
 <h4 class="sg" name="getting-started">Getting Started</h4>
 <ol>
 <li class="sg">Open <code>CMD</code> or <code>Terminal</code>, point the path to your designed folder.</li>
-<li class="sg">In the same CMD or , run <code>cd gulp-fe-dev</code></li>
+<li class="sg">In the same CMD or , run <code>cd pv-styleguide</code></li>
 <li class="sg">Next, run <code>npm i</code> (<code>i</code> stands for <code>install</code>)</li>
 </ol>
 <p class="sg">Now, run <code>gulp</code> from same CMD window. It will open the project server:</p>
 <ul>
 <li class="sg"><code>Project</code> - <code>http://localhost:3000/</code></li>
-<li class="sg"><code>Styleguide</code> - <code>http://localhost:3000/</code></li>
+<li class="sg"><code>Styleguide</code> - <code>http://localhost:3001/</code></li>
 </ul>
-<p class="sg">Continue working, as soon as you save - it will compile CSS, and Refresh HTML too.</p>
+<p class="sg">Continue working, as soon as you save - it will compile CSS,HTML and JS and automatically injects the latest codes to server.</p>
 <h5 class="sg" name="gulp-tasks">Gulp Tasks</h5>
 <ul>
 <li class="sg"><code>gulp</code> - Compiles the development files and generate the production ready files.</li>
 <li class="sg"><code>gulp styleguide</code> - Generate the styleguides with <em>styleguide</em> folder on root path.</li>
-<li class="sg"><code>gulp webstandards</code> - Validates whether your HTML/CSS/JS is up-to-date or not and or according to Web Standards.</li>
 </ul>
 <h5 class="sg" name="file-structure">File Structure</h5>
 <p class="sg"><strong>Production Files:-</strong></p>
@@ -24,7 +23,7 @@
 	|   +-- images
 	|   +-- scripts
 	|	|   +-- main.min.js
-	|   +-- styles
+	|   +-- css
 	|	|   +-- styles.min.css 
 	|   +-- index.html
 </div>
@@ -37,6 +36,8 @@
 	|	|	|   +-- Dependencies 1
 	|	|	|   +-- Dependencies 2
 	|	|   +-- scripts.js
+	|	|	|   +-- Scriptfile 1
+	|	|	|   +-- Scriptfile 2
 	|   +-- scss
 	|	|   +-- base
 	|	|	|   +-- _branding.scss
