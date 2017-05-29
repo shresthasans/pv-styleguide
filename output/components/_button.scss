@@ -1,0 +1,96 @@
+// Button
+//
+// Buttons are used as triggers for actions. Depending on the use case, buttons contain a label and/or an icon. There are a variety of styles, sizes, and variations that can be used for different situations. 
+//
+// All button labels are sentence case. They should be as short as possible while clearly explaining what will happen when the button is clicked.
+//
+// markup:
+//	<div class="helper-font">
+//		<table width="100%" class="table table-bordered table-hover helper-table">
+//			<colgroup>
+//				<col width="40%">
+//				<col width="60%">
+//			</colgroup>	
+//			<tr>
+//				<td>
+//					<button class="btn btn-default">
+//						normal
+//					</button>
+//				</td>
+//				<td> The button will be used for basic button requirements. </td>
+//			</tr>
+//			<tr>
+//				<td>
+//					<button class="btn btn-default" disabled="disabled">
+//						btn-disable
+//					</button>
+//				</td>
+//				<td> The button signifies the disabled state where users won't have access to do anything with this button. </td>
+//			</tr>
+//			<tr>
+//				<td>
+//					<button class="btn btn-warning">
+//						warning
+//					</button>
+//				</td>
+//				<td> The button will be used for warning actions followed by confirmation dialogue. </td>
+//			</tr>
+//			<tr>
+//				<td>
+//					<button class="btn btn--primary">
+//						btn--primary
+//					</button>
+//				</td>
+//				<td> The button will be used if there is a position action going on.</td>
+//			</tr>
+//			<tr>
+//				<td>
+//					<button class="btn btn-default btn--secondary">
+//						btn--secondary
+//					</button>
+//				</td>
+//				<td> Base font size </td>
+//			</tr>
+//			<tr>
+//				<td>
+//					<button class="btn btn-default btn--primary">
+//						<span class="glyphicon glyphicon-asterisk rotating"></span> Next
+//					</button>
+//				</td>
+//				<td> Animated Icons can be used along with button to give better visual interaction to end users. </td>
+//			</tr>
+//		</table>
+//	</div>
+//
+// Styleguide 2.1
+//
+
+.btn{
+	padding: .5rem 1rem;
+	display:inline-block;
+	transition: all .2s ease-in-out;
+	&--primary,
+	&--secondary{
+	  color:#FFF;
+		&:hover,
+		&:active{
+			color:#FFF;
+		}
+	}
+	&--primary{
+		background-color: $brand-primary;
+		border-color: $brand-primary;
+		&:hover{
+			background-color: darken($brand-primary, 10%);
+			border-color: darken($brand-primary, 15%);
+		}
+	}
+	&--secondary{
+		background-color:$brand-secondary;
+		border-color: $brand-secondary;
+		&:hover{
+			background-color: darken($brand-secondary, 10%);
+			border-color: darken($brand-secondary, 15%);
+		}
+	}
+}

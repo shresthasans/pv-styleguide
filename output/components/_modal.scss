@@ -1,0 +1,64 @@
+// Modal
+//
+// Dialogs provide the user with a focused way of accomplishing, confirming, or viewing something without entirely leaving a screen or page.
+//
+// markup:
+//	<div class="helper-font">
+//      <div class="modal helper-modal" tabindex="-1" role="dialog">
+//          <div class="modal-dialog" role="document">
+//              <div class="modal-content">
+//                  <div class="modal-header">
+//                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+//                      <h4 class="modal-title">Modal title</h4>
+//                  </div>
+//                  <div class="modal-body">
+//                      <p>One fine body&hellip;</p>
+//                  </div>
+//                  <div class="modal-footer">
+//                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+//                      <button type="button" class="btn btn--primary">Save changes</button>
+//                  </div>
+//              </div>
+//          </div>
+//      </div> <!-- Modal box Ends here -->
+//    <table width="100%" class="table table-bordered table-hover helper-table">
+//        <colgroup>
+//            <col width="40%">
+//            <col width="60%">
+//        </colgroup>	
+//        <thead>
+//            <tr>
+//              <td colspan="2"> 
+//                    <b>Modal dialogue box Configuration</b>
+//                     <p style="margin:0; padding:0; color:#616161; font-size:.9rem"> Following classes should be added just beside the <b>modal</b> to show different sizes of modal box. </p>
+//                </td>
+//            </tr>
+//        </thead>
+//        <tbody>
+//            <tr>
+//              <th> modal--sm </th>
+//              <td> This dialog box will be useful if we've limited content to show to end users</td>
+//            </tr>
+//            <tr>
+//              <th> modal--lg </th>
+//              <td> This dialog box will be useful if we've long content to show to end users</td>
+//            </tr>
+//        </tbody
+//    </table
+//  </div>
+//
+// Styleguide 2.3
+//
+
+.modal{
+    &--sm{
+        .modal-dialog{
+            width:400px !important;
+        }
+    }
+    &--lg{
+        .modal-dialog{
+            width:960px !important;
+        }
+    }
+}

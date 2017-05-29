@@ -1,0 +1,50 @@
+// Notification
+//
+// Dialogs provide the user with a focused way of accomplishing, confirming, or viewing something without entirely leaving a screen or page.
+//
+// markup:
+//	<div class="helper-font">
+//      <div class="alert alert-warning alert-dismissible" role="alert">
+//          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+//          <strong>Warning!</strong> Better check yourself, you're not looking too good.
+//      </div>
+//      <div class="alert alert-success alert-dismissible" role="alert">
+//          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+//          <strong>Warning!</strong> Better check yourself, you're not looking too good.
+//      </div>
+//      <div class="alert alert-info alert-dismissible" role="alert">
+//          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+//          <strong>Warning!</strong> Better check yourself, you're not looking too good.
+//      </div> <!-- Modal box Ends here -->
+//    <table width="100%" class="table table-bordered table-hover helper-table">
+//        <colgroup>
+//            <col width="40%">
+//            <col width="60%">
+//        </colgroup>	
+//        <thead>
+//            <tr>
+//              <td colspan="2"> 
+//                    <b>Notification Alert box Configuration</b>
+//                     <p style="margin:0; padding:0; color:#616161; font-size:.9rem"> Following classes should be added just beside the <b>alert</b> class to show different sizes of alert box. </p>
+//                </td>
+//            </tr>
+//        </thead>
+//        <tbody>
+//            <tr>
+//              <th> alert-success </th>
+//              <td> This dialog box will be useful if we've limited content to show to end users</td>
+//            </tr>
+//            <tr>
+//              <th> alert-warning </th>
+//              <td> This dialog box will be useful if we've long content to show to end users</td>
+//            </tr>
+//              <tr>
+//              <th> alert-info </th>
+//              <td> This dialog box will be useful if we've long content to show to end users</td>
+//            </tr>
+//        </tbody
+//    </table
+//  </div>
+//
+// Styleguide 2.4
+//

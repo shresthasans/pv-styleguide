@@ -1,0 +1,65 @@
+<h3 class="sg" name="frontend-ui-development-with-gulp-and-living-styleguide-(sc5)">Frontend UI Development with Gulp and living Styleguide (SC5)</h3>
+<hr>
+<h4 class="sg" name="getting-started">Getting Started</h4>
+<ol>
+<li class="sg">Open <code>CMD</code> or <code>Terminal</code>, point the path to your designed folder.</li>
+<li class="sg">In the same CMD or , run <code>cd gulp-fe-dev</code></li>
+<li class="sg">Next, run <code>npm i</code> (<code>i</code> stands for <code>install</code>)</li>
+</ol>
+<p class="sg">Now, run <code>gulp</code> from same CMD window. It will open the project server:</p>
+<ul>
+<li class="sg"><code>Project</code> - <code>http://localhost:3000/</code></li>
+<li class="sg"><code>Styleguide</code> - <code>http://localhost:3000/</code></li>
+</ul>
+<p class="sg">Continue working, as soon as you save - it will compile CSS, and Refresh HTML too.</p>
+<h5 class="sg" name="gulp-tasks">Gulp Tasks</h5>
+<ul>
+<li class="sg"><code>gulp</code> - Compiles the development files and generate the production ready files.</li>
+<li class="sg"><code>gulp styleguide</code> - Generate the styleguides with <em>styleguide</em> folder on root path.</li>
+<li class="sg"><code>gulp webstandards</code> - Validates whether your HTML/CSS/JS is up-to-date or not and or according to Web Standards.</li>
+</ul>
+<h5 class="sg" name="file-structure">File Structure</h5>
+<p class="sg"><strong>Production Files:-</strong></p>
+<div hljs="">	+-- dist
+	|   +-- images
+	|   +-- scripts
+	|	|   +-- main.min.js
+	|   +-- styles
+	|	|   +-- styles.min.css 
+	|   +-- index.html
+</div>
+<p class="sg"><strong>Development Files:-</strong></p>
+<div hljs="">	+-- src
+	|   +-- fonts
+	|   +-- images
+	|   +-- scripts
+	|	|   +-- vendors
+	|	|	|   +-- Dependencies 1
+	|	|	|   +-- Dependencies 2
+	|	|   +-- scripts.js
+	|   +-- scss
+	|	|   +-- base
+	|	|	|   +-- _branding.scss
+	|	|	|   +-- _typo.scss
+	|	|	|   +-- _units.scss
+	|	|	|   +-- _vars.scss
+	|	|   +-- components
+	|	|	|   +-- _button.scss
+	|	|	|   +-- _form.scss
+	|	|   +-- layout
+	|	|	|   +-- _header.scss
+	|	|	|   +-- _nav.scss
+	|	|	|   +-- _footer.scss
+	|	|	|   +-- _page.scss
+	|	|   +-- modules
+	|	|	|   +-- _modules-name.scss
+	|	|   +-- vendors
+	|	|	|   +-- _vendors 1.scss
+	|	|	|   +-- _vendors 1.scss
+	|	|   +-- styles.scss
+	|   +-- includes
+	|	|	|   +-- header.html
+	|	|	|   +-- aside.html
+	|	|	|   +-- footer.html
+	|   +-- index.html
+</div>

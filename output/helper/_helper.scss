@@ -1,0 +1,72 @@
+.helper{
+    &-box{
+        width:100px;
+        height:100px;
+        color:#FFF;
+        line-height:100px;
+    }
+    &-font{
+        font-family:  'Helvetica Neue', Arial, sans-serfi;
+        &--one{
+            font-size:3.75rem;
+        }
+        &--two{
+            font-size:3rem;
+        }
+        &--three{
+            font-size:2.25rem;            
+        }
+        &--four{
+            font-size:1.875rem;
+        }
+        &--five{
+            font-size:1.5rem;
+        }
+        &--six{
+            font-size:1.125rem;
+        }
+        &--paragraph{
+            font-size:1rem;
+        }
+    }
+    &-table{
+        > tbody > tr > td{
+            vertical-align: middle;
+        }
+    }
+    &-modal{
+        position:static;
+        display:block;
+    }
+}
+
+.brand{
+    &-primary{
+        background: $brand-primary;
+    }
+    &-secondary{
+        background: $brand-secondary;
+    }
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 2s linear infinite;
+}
+
