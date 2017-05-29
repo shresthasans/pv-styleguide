@@ -113,7 +113,7 @@ gulp.task('sass', function() {
 				port: 3001,
 				rootPath: outputPath,
 				overviewPath: 'README.md',
-				appRoot: '/output',
+				appRoot: '/pv-styleguide/output/',
 			}))
 			.pipe(gulp.dest(outputPath))
 		});
