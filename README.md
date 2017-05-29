@@ -4,19 +4,18 @@
 #### Getting Started
 
 1. Open `CMD` or `Terminal`, point the path to your designed folder.
-2. In the same CMD or , run `cd gulp-fe-dev`
+2. In the same CMD or , run `cd pv-styleguide`
 3. Next, run `npm i` (`i` stands for `install`)
  
 Now, run `gulp` from same CMD window. It will open the project server: 
 - `Project` - `http://localhost:3000/`
-- `Styleguide` - `http://localhost:3000/`
+- `Styleguide` - `http://localhost:3001/`
 
-Continue working, as soon as you save - it will compile CSS, and Refresh HTML too.
+Continue working, as soon as you save - it will compile CSS,HTML and JS and automatically injects the latest codes to server.
 
 ##### Gulp Tasks
 - `gulp` - Compiles the development files and generate the production ready files.
 - `gulp styleguide` - Generate the styleguides with *styleguide* folder on root path.
-- `gulp webstandards` - Validates whether your HTML/CSS/JS is up-to-date or not and or according to Web Standards.
 
 
 ##### File Structure
@@ -27,7 +26,7 @@ Continue working, as soon as you save - it will compile CSS, and Refresh HTML to
 	|   +-- images
 	|   +-- scripts
 	|	|   +-- main.min.js
-	|   +-- styles
+	|   +-- css
 	|	|   +-- styles.min.css 
 	|   +-- index.html
 ```
@@ -42,6 +41,8 @@ Continue working, as soon as you save - it will compile CSS, and Refresh HTML to
 	|	|	|   +-- Dependencies 1
 	|	|	|   +-- Dependencies 2
 	|	|   +-- scripts.js
+	|	|	|   +-- Scriptfile 1
+	|	|	|   +-- Scriptfile 2
 	|   +-- scss
 	|	|   +-- base
 	|	|	|   +-- _branding.scss
