@@ -25,7 +25,7 @@ angular.module('sgApp', deps)
     if (typeof window._styleguideConfig !== 'undefined') {
       styleguideConfig = window._styleguideConfig;
     }
-    $urlRouterProvider.otherwise('/pv-styleguide/output/');
+    $urlRouterProvider.otherwise('/');
     $stateProvider
       .state('app', {
         template: '<ui-view />',
