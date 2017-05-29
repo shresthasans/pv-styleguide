@@ -11,19 +11,20 @@ Now, run `gulp` from same CMD window. It will open the project server:
 - `Project` - `http://localhost:3000/`
 - `Styleguide` - `http://localhost:3001/`
 
-Continue working, as soon as you save - it will compile CSS,HTML and JS and automatically injects the latest codes to server.
+Continue working, as soon as you save your updates, It will compare the latest changes, compiles and auto injects the updated HTML, CSS and JavaScripts.
 
-##### Gulp Tasks
+#### Gulp Tasks
 - `gulp` - Compiles the development files and generate the production ready files.
 - `gulp styleguide` - Generate the styleguides with *styleguide* folder on root path.
 
 
-##### File Structure
+#### File Structure
 
 **Production Files:-**
 ```
 	+-- dist
 	|   +-- images
+	|   +-- fonts
 	|   +-- scripts
 	|	|   +-- main.min.js
 	|   +-- css
@@ -33,7 +34,7 @@ Continue working, as soon as you save - it will compile CSS,HTML and JS and auto
 
 **Development Files:-**
 ```
-	+-- src
+	+-- dev
 	|   +-- fonts
 	|   +-- images
 	|   +-- scripts
@@ -52,6 +53,8 @@ Continue working, as soon as you save - it will compile CSS,HTML and JS and auto
 	|	|   +-- components
 	|	|	|   +-- _button.scss
 	|	|	|   +-- _form.scss
+	|	|	|   +-- modal.scss
+	|	|	|   +-- _notification.scss
 	|	|   +-- layout
 	|	|	|   +-- _header.scss
 	|	|	|   +-- _nav.scss
