@@ -32,7 +32,6 @@ Temporary Items
 
 /node_modules/*
 /dev/*
-/dist/*
 package.json
 **/*.log*
 .Trashes
