@@ -11,16 +11,17 @@
 <li class="sg"><code>Project</code> - <code>http://localhost:3000/</code></li>
 <li class="sg"><code>Styleguide</code> - <code>http://localhost:3001/</code></li>
 </ul>
-<p class="sg">Continue working, as soon as you save - it will compile CSS,HTML and JS and automatically injects the latest codes to server.</p>
-<h5 class="sg" name="gulp-tasks">Gulp Tasks</h5>
+<p class="sg">Continue working, as soon as you save your updates, It will compare the latest changes, compiles and auto injects the updated HTML, CSS and JavaScripts.</p>
+<h4 class="sg" name="gulp-tasks">Gulp Tasks</h4>
 <ul>
 <li class="sg"><code>gulp</code> - Compiles the development files and generate the production ready files.</li>
 <li class="sg"><code>gulp styleguide</code> - Generate the styleguides with <em>styleguide</em> folder on root path.</li>
 </ul>
-<h5 class="sg" name="file-structure">File Structure</h5>
+<h4 class="sg" name="file-structure">File Structure</h4>
 <p class="sg"><strong>Production Files:-</strong></p>
 <div hljs="">	+-- dist
 	|   +-- images
+	|   +-- fonts
 	|   +-- scripts
 	|	|   +-- main.min.js
 	|   +-- css
@@ -28,7 +29,7 @@
 	|   +-- index.html
 </div>
 <p class="sg"><strong>Development Files:-</strong></p>
-<div hljs="">	+-- src
+<div hljs="">	+-- dev
 	|   +-- fonts
 	|   +-- images
 	|   +-- scripts
@@ -47,6 +48,8 @@
 	|	|   +-- components
 	|	|	|   +-- _button.scss
 	|	|	|   +-- _form.scss
+	|	|	|   +-- modal.scss
+	|	|	|   +-- _notification.scss
 	|	|   +-- layout
 	|	|	|   +-- _header.scss
 	|	|	|   +-- _nav.scss
