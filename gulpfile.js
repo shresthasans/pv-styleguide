@@ -93,11 +93,11 @@ gulp.task('styleguide:generate', function() {
 	return gulp.src('dev/scss/**/*.scss')
 	.pipe(styleguide.generate({
 		title: 'Pagevamp Styleguide',
-		//server: true, // Un-Comment this code if you want to host the styleguide locally
+		server: true, // Un-Comment this code if you want to host the styleguide locally
 		port: 3001,
 		rootPath: outputPath,
 		overviewPath: 'README.md',
-		appRoot: '/pv-styleguide/output', // Un-Comment this code if you want to host the styleguide on Server.
+		//appRoot: '/pv-styleguide/output', // Un-Comment this code if you want to host the styleguide on Server.
 	}))
 	.pipe(gulp.dest(outputPath))
 });
