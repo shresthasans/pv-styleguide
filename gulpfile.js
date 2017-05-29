@@ -109,9 +109,11 @@ gulp.task('sass', function() {
 			return gulp.src('dev/scss/**/*.scss')
 			.pipe(styleguide.generate({
 				title: 'Pagevamp Styleguide',
+				//server: true,
 				port: 3001,
 				rootPath: outputPath,
-				overviewPath: 'README.md'
+				overviewPath: 'README.md',
+				appRoot: '/output',
 			}))
 			.pipe(gulp.dest(outputPath))
 		});
