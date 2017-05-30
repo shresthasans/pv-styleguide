@@ -22,6 +22,7 @@ fileinclude = require('gulp-file-include'),
 styleguide = require('sc5-styleguide'),
 sass = require('gulp-sass'),
 bs = require('browser-sync').create(),
+webstandards = require('gulp-webstandards'),
 outputPath = 'output';
 
 
@@ -109,6 +110,11 @@ gulp.task('styleguide:applystyles', function() {
 	}))
 	.pipe(styleguide.applyStyles())
 	.pipe(gulp.dest(outputPath))
+});
+
+gulp.task('webstandards', function () {
+    return gulp.src('dist/**/*')
+        .pipe(webstandards());
 });
 
 // Static Server + Watching task for tracking latest updates.
