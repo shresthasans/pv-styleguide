@@ -44,6 +44,12 @@ gulp.task('sass', function() {
 	*/
 });	
 
+// Copy web fonts to dist
+gulp.task('fonts', function () {
+	return gulp.src(['dev/fonts/**/*'])
+	.pipe(gulp.dest('dist/fonts'))
+});
+
 // HTML minify
 gulp.task('htmlmin', function() {
 	return gulp.src('dev/*.html')
@@ -113,20 +119,21 @@ gulp.task('styleguide:applystyles', function() {
 });
 
 gulp.task('webstandards', function () {
-    return gulp.src('dist/**/*')
-        .pipe(webstandards());
+	return gulp.src('dist/**/*')
+	.pipe(webstandards());
 });
 
 // Static Server + Watching task for tracking latest updates.
-gulp.task('serve', ['sass','htmlmin','styleguide'], function() {
+gulp.task('serve', ['sass','htmlmin','styleguide', 'fonts'], function() {
 	bs.init({
 		server: "dist/"
 	});
 	gulp.watch("dev/scss/**/*.scss", ['sass', 'styleguide']).on('change', bs.reload);
+	gulp.watch("dev/fonts/**/*", ['fonts']).on('change', bs.reload);
 	gulp.watch("dev/images/**/*", ['images']).on('change', bs.reload);
 	gulp.watch("dev/scripts/**/*.js", ['scripts']).on('change', bs.reload);
 	gulp.watch("dev/**/*.html", ['htmlmin']).on('change', bs.reload);
 });
 
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
-gulp.task('default', ['serve', 'styleguide']);
+gulp.task('default', ['serve', 'styleguide', 'fonts']);
