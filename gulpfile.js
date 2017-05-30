@@ -136,4 +136,4 @@ gulp.task('serve', ['sass','htmlmin','styleguide', 'fonts'], function() {
 });
 
 gulp.task('styleguide', ['styleguide:generate', 'styleguide:applystyles']);
-gulp.task('default', ['serve', 'styleguide', 'fonts']);
+gulp.task('default', ['serve', 'styleguide']);
