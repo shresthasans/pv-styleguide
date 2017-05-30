@@ -16,6 +16,7 @@ Continue working, as soon as you save your updates, It will compare the latest c
 #### Gulp Tasks
 - `gulp` - Compiles the development files and generate the production ready files.
 - `gulp styleguide` - Generate the styleguides with *styleguide* folder on root path.
+- `gulp webstandards` - Checks whether the Code(HTML, CSS and JavaScript/jQuery) meets current web standards.
 
 
 #### File Structure
