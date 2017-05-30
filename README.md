@@ -74,4 +74,8 @@ Continue working, as soon as you save your updates, It will compare the latest c
 	|   +-- index.html
 ```
 
+##### **Note: -**
 
+Due to purpose based styleguide generation (Locally hosted and Server side hosting ready), An object of **styleguide:generate** on gulpfile needs to updated on conditional based.
+- `server: true` - Commenting it out will generate the server hosting ready files.
+- `appRoot` - Commenting it out will generate locally hosted styleguide, injecting latest files on client server.

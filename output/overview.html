@@ -16,6 +16,7 @@
 <ul>
 <li class="sg"><code>gulp</code> - Compiles the development files and generate the production ready files.</li>
 <li class="sg"><code>gulp styleguide</code> - Generate the styleguides with <em>styleguide</em> folder on root path.</li>
+<li class="sg"><code>gulp webstandards</code> - Checks whether the Code(HTML, CSS and JavaScript/jQuery) meets current web standards.</li>
 </ul>
 <h4 class="sg" name="file-structure">File Structure</h4>
 <p class="sg"><strong>Production Files:-</strong></p>
@@ -67,3 +68,9 @@
 	|	|	|   +-- footer.html
 	|   +-- index.html
 </div>
+<h5 class="sg" name="note:--"><strong>Note: -</strong></h5>
+<p class="sg">Due to purpose based styleguide generation (Locally hosted and Server side hosting ready), An object of <strong>styleguide:generate</strong> on gulpfile needs to updated on conditional based.</p>
+<ul>
+<li class="sg"><code>server: true</code> - Commenting it out will generate the server hosting ready files.</li>
+<li class="sg"><code>appRoot</code> - Commenting it out will generate locally hosted styleguide, injecting latest files on client server.</li>
+</ul>
